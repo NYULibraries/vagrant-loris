@@ -1,0 +1,14 @@
+{
+  "name": "flannon-housekeeping",
+  "version": "0.1.0",
+  "author": "flannon",
+  "summary": "Performs initial system setup tasks.",
+  "license": "Apache-2.0",
+  "source": "modules-local",
+  "project_page": null,
+  "issues_url": null,
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
