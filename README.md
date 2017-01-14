@@ -1,7 +1,7 @@
-# vagrant-lors
+## vagrant-loris
 
 
-## Table of Contents
+### Table of Contents
 
 1. [Overview] (#overview)
 2. [Pre-Install] (#pre-install)
@@ -13,7 +13,7 @@
 A vagrant box running the loris image server.
 
 
-#### Pre-Installaiton Setup
+#### Pre-Installation Setup
 
 To run the vagrant installer you will need Virtualbox, vagrant, and the 
 vagrant plugins vagrant-r10k, and vagrant-vbguest.  If you're on a Mac the easiest way to install everything you'll need is with homebrew.  The following steps will install homebrew and everything you need to get vagrant running
@@ -40,7 +40,7 @@ Then to connect to your vagrant box you can,
 
     $ vagrant ssh
 
-Port 9080 on your host is mapped to port 80 on the guest.  Loris is available at,
+Port 9080 on the host is mapped to port 80 on the guest.  Loris is available at,
 
         http://localhost:9080/loris/
 
