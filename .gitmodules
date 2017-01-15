@@ -1,3 +1,0 @@
-[submodule "puppet/modules/local/fedora_repository"]
-        path = puppet/modules/local/fcrepo3_repository
-        url = ssh://git@github.com/NYULibraries/puppet-fcrepo3
