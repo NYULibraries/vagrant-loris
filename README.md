@@ -42,6 +42,16 @@ Then to connect to your vagrant box you can,
 
 Port 9080 on the host is mapped to port 80 on the guest.  Loris is available at,
 
-        http://localhost:9080/loris/
+    http://localhost:9080/loris/
 
+ There is a demo image in the loris image cache.  The image metadata ca be viewed at,
 
+    http://localhost:9080/loris/001.jp2/info.json
+
+and the image can be viewed at,
+
+    http://localhost:9080/loris/001.jp2/full/640,/0/default.png
+
+You can resize the image by changing the 5th element of the URL's path like this,
+
+    http://localhost:9080/loris/001.jp2/full/940,/0/default.png
