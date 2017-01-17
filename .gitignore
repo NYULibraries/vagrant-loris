@@ -46,8 +46,5 @@ doc/
 .rvmrc
 
 # Puppet
-puppet/modules/thirdparty/*
-
 tmp/
 untracked-files/
-puppet/environments/*/modules/thirdparty/*
