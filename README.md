@@ -26,6 +26,7 @@ vagrant plugins vagrant-r10k, and vagrant-vbguest.  If you're on a Mac the easie
     $ vagrant plugin install vagrant-r10k
     $ vagrant plugin install vagrant-vbguest
 
+Note:  This vagrant environment requires vagrant version 1.9.1 or higher.  I'm not sure whan it started but somewhere around vagrant 1.8.3 or 1.8.4 it started having problems running the vagrant-r10k plugin.  I've had positive results form vagrant 1.8.0 and 1.9.1, so it's best to stick with the most current version.
 
 #### Usage
 
