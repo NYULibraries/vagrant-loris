@@ -14,7 +14,7 @@ Vagrant.configure(2) do |config|
   #config.vm.box = "Centos7-1611-2"
   config.vm.provider "virtualbox" do |vb|
     #vb.memory = "2048"
-    vb.name = HOST_NAME
+    #vb.name = HOST_NAME
     vb.linked_clone = true if Vagrant::VERSION =~ /^1.8/
   end
   config.vm.network "private_network", type: "dhcp",
@@ -32,6 +32,7 @@ Vagrant.configure(2) do |config|
   #config.vm.synced_folder "./", "/vagrant", disabled: true
   #config.vm.synced_folder "./", "/vagrant-" + HOST_NAME, id: "vagrant-" + HOST_NAME
   config.vm.provision "shell", path: "bin/init-puppet-centos7.sh"
+  config.vm.provision "shell", path: "bin/init-venv.sh"
   config.vm.provision "shell", path: "bin/load-mpapis-sig.sh"
   #config.vm.provision "file", source: "../../../puppet/", destination: "/etc/puppetlabs/puppet/"
   config.vm.provision "file", source: "~/.gitconfig", destination: ".gitconfig"
