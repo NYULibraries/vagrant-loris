@@ -1,8 +1,17 @@
 #!/bin/bash
 
-VENV=/var/www/loris2/virtualenv
+USER=loris
+VENVDIR=/var/www/loris2
+VENV=virtualenv
 
-yum install -y python-virtualenv.noarch
-mkdir -p $VENV
-cd ${VENV}/..
-/bin/virtualenv virtualenv
+if [[ ! -d ${VENVDIR}/${VENV} ]]
+then
+
+  useradd -d $VENVDIR $USER
+  yum install -y python-virtualenv.noarch
+  mkdir -p ${VENVDIR}/${VENV}
+  cd ${VENVDIR}
+  /bin/virtualenv virtualenv
+  chown -R $USER: $VENVDIR
+
+fi
