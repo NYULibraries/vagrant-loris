@@ -52,8 +52,8 @@ doc/
 **/*.zip
 
 # Puppet
-puppet/modules/thirdparty/*
-puppet/environments/*/modules/thirdparty/*
+#puppet/modules/thirdparty/*
+#puppet/environments/*/modules/thirdparty/*
 
 # misc
 tmp/
