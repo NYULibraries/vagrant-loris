@@ -1,0 +1,5 @@
+---
+vim::home: '/home'
+vim::position: 'os-family-RedHat.yaml'
+vim::user: 'centos'
+vim::group: 'centos'

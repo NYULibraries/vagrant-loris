@@ -1,0 +1,14 @@
+{
+  "name": "flannon/remi_safe_repo",
+  "version": "0.1.0",
+  "author": "flannon",
+  "summary": "Installs remi-safe",
+  "license": "Apache 2.0",
+  "source": "https://github.com/flannon/puppet-remi-safe.git",
+  "project_page": "https://github.com/flannon/puppet-remi-safe",
+  "issues_url": "https://github.com/flannon/puppet-remi-safe/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+

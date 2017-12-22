@@ -1,0 +1,19 @@
+set hlsearch
+set nu
+set smartindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
+filetype on
+filetype plugin indent on
+
+syntax on
+
+set nocompatible
+filetype off   
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+

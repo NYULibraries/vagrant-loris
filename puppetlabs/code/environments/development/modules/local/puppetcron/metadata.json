@@ -1,0 +1,14 @@
+{
+  "name": "puppet-puppetcron",
+  "version": "1.0.0",
+  "author": "Flannon Jackson",
+  "summary": "Maintenance utilities for Masterless puppet environment.",
+  "license": "Apache 2.0",
+  "source": "https://github.com/flannon/puppet-puppetcron.git",
+  "project_page": "https://github.com/flannon/puppet-puppetcron",
+  "issues_url": "https://github.com/flannon/puppet-puppetcron/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+

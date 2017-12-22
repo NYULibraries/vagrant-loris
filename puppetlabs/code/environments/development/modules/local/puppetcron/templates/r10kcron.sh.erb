@@ -1,0 +1,31 @@
+#!/bin/bash
+
+set -e
+
+export $HOME='/root'
+export PATH="/opt/puppetlabs/bin:/opt/puppetlabs/puppet/bin::/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin"
+
+
+BASEDIR='/etc/puppetlabs'
+ENVIRNMENT="${BASEDIR}/code/environment/production"
+MANIFEST="${ENVIRONMENT}/manifests/site.pp"
+MODULEDIR="${ENVIRONMENT}/modules"
+PUPPETFILE="${ENVIRONMENT}/Puppetfile"
+MODULEPATH="${ENVIRONMENT}/local:${ENVIRONMENT}/site:${ENVIRONMENT}modules"
+PUPPETFILE="${ENVIRONMENT}/Puppetfile"
+
+cd $BASEDIR
+
+if [[ ! -d $MODULEDIR ]]
+then
+    mkdir -p $MODULEDIR
+fi
+
+if [[ -f $PUPPETFILE ]] 
+then
+  r10k deploy environment <%= @environment %> -p 
+else 
+    echo "$PUPPETFILE file not found    "
+    exit 2
+fi
+

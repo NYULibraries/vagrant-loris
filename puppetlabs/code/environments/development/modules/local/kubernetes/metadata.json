@@ -1,0 +1,14 @@
+{
+  "name": "nyulibraries-kubernetes",
+  "version": "0.1.0",
+  "author": "Flannon Jackson",
+  "summary": "Installs kubernetes",
+  "license": "Apache 2.0",
+  "source": "https://github.com/NYULibraries/puppet-kubernetes",
+  "project_page": "https://github.com/NYULibraries/puppet-kubernetes",
+  "issues_url": "https://github.com/NYULibraries/puppet-kubernetes/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+

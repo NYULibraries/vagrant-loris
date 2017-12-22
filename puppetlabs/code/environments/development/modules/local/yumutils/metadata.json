@@ -1,0 +1,15 @@
+{
+  "name": "flannon-yumutils",
+  "version": "0.1.0",
+  "author": "flannon",
+  "summary": "Installs yum-utils",
+  "license": "Apache-2.0",
+  "source": "https://github.com/flannon/yumutils",
+  "project_page": "https://github.com/flannon/yumutils",
+  "issues_url": "https://github.com/flannon/yumutils/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+

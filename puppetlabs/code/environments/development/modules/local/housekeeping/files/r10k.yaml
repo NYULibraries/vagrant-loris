@@ -1,0 +1,9 @@
+---
+sources:
+  puppet:
+    #remote: 'https://git-codecommit.us-east-1.amazonaws.com/v1/repos/PuppetControl'
+    remote: 'https://github.com/flannon/packer-puppet-basedir.git'
+    basedir: '/etc/puppetlabs/code/environments'
+    invalid_branches: 'correct_and_warn'
+    deploy:
+      purge_levels: [ 'deployment', 'environment' ]

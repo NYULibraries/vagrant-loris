@@ -1,0 +1,22 @@
+#!/bin/bash
+
+set -e
+
+PATH="/opt/puppetlabs/bin:/opt/puppetlabs/puppet/bin::/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin"
+
+BASEDIR='/etc/puppetlabs'
+ENVIRONMENT="${BASEDIR}/code/environments/<%= @environment %>"
+MANIFEST="${ENVIRONMENT}/manifests/site.pp"
+MODULEDIR="${ENVIRONMENT}/modules"
+MODULEPATH="${MODULEDIR}/local:${MODULEDIR}/site:${MODULEDIR}/thirdparty"
+PUPPETFILE="${ENVIRONMENT}/Puppetfile"
+
+if [[ -f $MANIFEST ]]
+then
+  puppet apply --modulepath=${MODULEPATH} --verbose --environment=<%= @environment %> --hiera_config=${ENVIRONMENT}/hiera.yaml $MANIFEST
+
+else
+    echo "$MANIFEST file not found"
+    exit 2
+fi
+

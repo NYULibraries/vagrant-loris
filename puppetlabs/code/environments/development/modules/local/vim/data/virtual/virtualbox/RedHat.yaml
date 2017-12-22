@@ -1,0 +1,24 @@
+---
+vim::home: '/home'
+vim::position: 'os-family-RedHat.yaml'
+vim::user: 'vagrant'
+vim::group: 'vagrant'
+vim::test: 'test'
+vim::requirements:
+  - automake
+  - centos-release-scl
+  - devtoolset-4-gcc
+  - devtoolset-4-gcc-c++
+  - gcc
+  - gcc-c++  
+  - kernel-devel    
+  - cmake
+  - python34-devel
+vim::packages:
+  - vim-common
+    #  - vim-minimal
+    #- vim-enhanced
+    #- vim-common
+    #- vim-minimal-2:8.0.0600-1.1.24.el7.centos.x86_64
+    #- vim-enhanced-2:8.0.0600-1.1.24.el7.centos.x86_64
+    #  - vim-common-2:8.0.0600-1.1.24.el7.centos.x86_64

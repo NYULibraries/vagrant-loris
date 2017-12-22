@@ -1,0 +1,19 @@
+{
+  "name": "flannon/tct",
+  "version": "0.1.0",
+  "author": "Flannon Jackson",
+  "summary": "Installs the Topic Curration Toolkit",
+  "license": "Apache-2.0",
+  "source": "https://github.com/NYULibraries/puppet-tct",
+  "project_page": "https://github.com/NYULibraries/puppet-tct",
+  "issues_url": "https://github.com/NYULibraries/puppet-tct/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"},
+    {"name":"stankevich-python","version_requirement":">= 1.18.2"},
+    {"name":"voxpupuli-nodejs","version_requirement":">= v3.0.0"},
+    {"name":"puppetlabs-vcsrepo","version_requirement":">= 1.5.0"},
+    {"name":"voxpupuli-nginx","version_requirement":">= v0.6.0"}
+  ],
+  "data_provider": null
+}
+

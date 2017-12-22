@@ -1,0 +1,7 @@
+---
+message: "This node is using common data"
+loris::image_cache: '/content/dev/cache'
+loris::info_cache: '/content/dev/cache'
+loris::source_images: '/content/dev/images'
+puppetcron::environment: 'production'
+puppetcron::ensure: 'present'

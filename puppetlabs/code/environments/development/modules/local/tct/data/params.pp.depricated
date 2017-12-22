@@ -1,0 +1,48 @@
+# Class: tct::params
+# ===========================
+#
+# Full description of class tct here.
+#
+#
+# Examples
+# --------
+#
+#
+# Authors
+# -------
+#
+# Flannon Jackson <flannon@nyu.edu>
+#
+# Copyright
+# ---------
+#
+# Copyright 2017 Your name here, unless otherwise noted.
+#
+class tct::params {
+
+  case $::osfamily {
+    'RedHat' : {
+      $allowed_hosts = 'nyuapi.infoloom.nyc'
+      $backend     = "dlts-enm-tct-backend"
+      $backend_revision = "master"
+      $basename    = 'tct.home.wfc'
+      $baseurl     = "http://${basename}/"
+      $db_host     = 'localhost'
+      $db_password = 'cFHg*Liw45'
+      $db_user     = 'tctdb'
+      $frontend    = "dlts-enm-tct-frontend"
+      $frontend_revision = "master"
+      $install_dir = "/opt/tct"
+      $media_root  = "/opt/tct/www/${basename}/media"
+      $pub_src     = "${install_dir}/www"
+      # production_settings.py
+      $static_root = "${install_dir}/www/static"
+      $secret_key  = 'some_long_random_string_of_letters_numbers_and_symbols'
+      $tct_db      = 'nyuotl_db'
+      $user        = 'tct'
+      $venv        = '/opt/tct/virtualenv'
+      $www_dir     = '/var/www/html'
+      $epubs_src_folder  = "${media_root}/epubs"
+    }
+  }
+}

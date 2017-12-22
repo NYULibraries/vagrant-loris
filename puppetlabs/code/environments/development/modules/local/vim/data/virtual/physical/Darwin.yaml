@@ -1,0 +1,4 @@
+---
+vim::home: '/User'
+vim::user: 'undef'
+vim::group: 'staff'

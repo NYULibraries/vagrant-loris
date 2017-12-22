@@ -1,0 +1,15 @@
+{
+  "name": "puppet-yumrepos",
+  "version": "0.1.0",
+  "author": "Flannon Jackson",
+  "summary": "MAnage third party yum repos",
+  "license": "Apache-2.0",
+  "source": "https://github.com/flannon/puppet-yumrepos.git",
+  "project_page": "https://github.com/flannon/puppet-yumrepos",
+  "issues_url": "https://github.com/flannon/puppet-yumrepos/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+

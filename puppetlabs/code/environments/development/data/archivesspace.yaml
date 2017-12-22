@@ -1,0 +1,20 @@
+---
+message: "This node is using common data"
+archivesspace::version: '2.2.2-1.el7.centos'
+archivesspace::install_dir: "/opt/archivesspace"
+archivesspace::conf_dir: "%{install_dir}/config"
+archivesspace::conf_file: "/opt/archivesspace/config/config.rb"
+archivesspace::java_heap_max: '-Xmx2048m'
+archivesspace::plugin_install_dir: '/opt/archivesspace/plugins'
+archivesspace::user: 'aspace'
+archivesspace::group: 'aspace'
+archivesspace::plugin_marcxml_export_revision: 'production'
+archivesspace::plugin_ead_export_revision: 'production'
+archivesspace::plugin_sso_revision: 'production'
+archivesspace::plugin_conf: "AppConfig[:plugins] = [\'nyu_marcxml_export_plugin\', \'nyu_ead_export_plugin\', \'digitization_work_order\']"
+#archivesspace::db_host: 'acm-aspace-dev-cluster.cluster-caa7arvvnl9h.us-east-1.rds.amazonaws.com'
+archivesspace::db_passwd: 'letmein#acm'
+archivesspace::db_name: 'asdb'
+archivesspace::db_user: 'aspace'
+profiles::archivesspace_plugin_marcxml_export_revision: 'production'
+

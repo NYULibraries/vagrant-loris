@@ -1,0 +1,23 @@
+---
+tct::allowed_hosts: 'nyuapi.infoloom.nyc'
+tct::backend: "dlts-enm-tct-backend"
+tct::backend_revision: "master"
+tct::basename: 'tct.home.wfc'
+tct::baseurl: "http://${basename}/"
+tct::db_host: 'localhost'
+tct::db_password: 'cFHg*Liw45'
+tct::db_user: 'tctdb'
+tct::frontend: 'dlts-enm-tct-frontend'
+tct::frontend_revision: 'master'
+tct::install_dir: '/opt/tct'
+tct::media_root: "/opt/tct/www/${basename}/media"
+#tct::pub_src: "${install_dir}/www"
+tct::pub_src: "/opt/tct/www"
+#production_settings.py
+tct::static_root: "${install_dir}/www/static"
+tct::secret_key: 'some_long_random_string_of_letters_numbers_and_symbols'
+tct::tct_db: 'nyuotl_db'
+tct::user: 'tct'
+tct::venv: '/opt/tct/virtualenv'
+tct::www_dir: '/var/www/html'
+tct::epubs_src_folder: "${media_root}/epubs"

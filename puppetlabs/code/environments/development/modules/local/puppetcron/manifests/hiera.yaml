@@ -1,0 +1,7 @@
+---
+version: 5
+hierarchy:
+  - name: "puppetcron class parameter defaults"
+    data_hash: "puppetcron::params"
+  # We only need one hierarchy level, since one function provides all the data.
+

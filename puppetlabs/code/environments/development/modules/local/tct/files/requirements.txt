@@ -1,0 +1,11 @@
+Django==1.10.3
+django-allauth==0.27.0
+django-autoslug==1.9.3
+django-cors-headers==1.1.0
+django-debug-toolbar==1.5
+django-extensions==1.7.2
+django-filter==1.0.1
+django-rest-auth==0.8.1
+djangorestframework==3.4.6
+lxml==3.6.4
+psycopg2==2.7.1

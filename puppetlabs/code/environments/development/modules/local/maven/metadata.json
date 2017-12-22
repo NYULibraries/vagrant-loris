@@ -1,0 +1,14 @@
+{
+  "name": "flannon/epel_apache_maven",
+  "version": "0.1.0",
+  "author": "flannon",
+  "summary": "Installs the epel-apache-maven repo.",
+  "license": "Apache 2.0",
+  "source": "https://github.com/flannon/puppet-epel_apache_maven.git",
+  "project_page": "https://github.com/flannon/puppet-epel_apache_maven",
+  "issues_url": "https://github.com/flannon/puppet-epel_apache_maven/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
