@@ -15,18 +15,13 @@ A vagrant box running the loris image server.
 
 #### Pre-Installation Setup
 
-To run the vagrant installer you will need Virtualbox, vagrant, and the 
-vagrant plugins vagrant-r10k, and vagrant-vbguest.  If you're on a Mac the easiest way to install everything you'll need is with homebrew.  The following steps will install homebrew and everything you need to get vagrant running
+To run the vagrant installer you will need Virtualbox  and vagrant v2.0.1 or later. The Vagrant file also requires several vagrant plugins that will be installed for you if you don't already have them. If you're on a Mac the easiest way to install everything you'll need is with homebrew.  The following steps will install homebrew and everything you need to get vagrant running
 
 
     $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     $ brew cask install virtualbox
     $ brew cask install vagrant
-    $ brew cask install vagrant-manager
-    $ vagrant plugin install vagrant-r10k
-    $ vagrant plugin install vagrant-vbguest
 
-Note:  This vagrant environment requires vagrant version 1.9.1 or higher.  I'm not sure whan it started but somewhere around vagrant 1.8.3 or 1.8.4 it started having problems running the vagrant-r10k plugin.  I've had positive results form vagrant 1.8.0 and 1.9.1, so it's best to stick with the most current version.
 
 #### Usage
 
@@ -45,13 +40,15 @@ Port 9080 on the host is mapped to port 80 on the guest.  Loris is available at,
 
     http://localhost:9080/loris/
 
- There is a demo image in the loris image cache.  The image metadata ca be viewed at,
+ There is a demo image in the loris image cache.  The image metadata can be viewed at,
 
     http://localhost:9080/loris/001.jp2/info.json
 
 and the image can be viewed at,
 
     http://localhost:9080/loris/001.jp2/full/640,/0/default.png
+
+The loris image cache is located at /usr/local/share/images/ on the guest.
 
 You can resize the image by changing the 5th element of the URL's path like this,
 

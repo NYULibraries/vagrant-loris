@@ -1,0 +1,8 @@
+---
+sources:
+  puppet:
+    remote: 'https://github.com/NYULibraries/puppet-control-repo'
+    basedir: 'code/environments'
+    invalid_branches: 'correct_and_warn'
+    deploy:
+      purge_levels: [ 'deployment', 'environment' ]

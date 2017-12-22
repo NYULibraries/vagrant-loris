@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/stan/Documents/Python/aws/fabric/payload/ec2-auth-setup/auth-setup'
-let g:netrw_dirhist_2='/opt/boxen/repo/hiera'
-let g:netrw_dirhist_3='/Users/stan/Documents/vagrant/ichabod/.git'
-let g:netrw_dirhist_4='/Users/stan/Documents/dlib/ichabod-librarian-puppet/puppet/manifests'
-let g:netrw_dirhist_5='/Users/stan/tmp'

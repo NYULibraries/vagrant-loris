@@ -45,6 +45,18 @@ doc/
 .ruby-version
 .rvmrc
 
+# packages and archive files
+**/*.bzip2
+**/*.gz
+**/*.rpm
+**/*.zip
+
 # Puppet
+puppet/modules/thirdparty/*
+puppet/environments/*/modules/thirdparty/*
+
+# misc
 tmp/
 untracked-files/
+**/_depricated
+hieradata

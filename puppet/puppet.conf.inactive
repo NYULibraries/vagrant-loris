@@ -1,6 +1,0 @@
-[main]
-  basemodulepath = /etc/puppet/modules/thirdparty:/etc/puppet/modules/local:/etc/puppet/modules/sites
-
-  environmentpath = $confdir/environments
-
-  hiera_config = /etc/puppet/hiera.yaml
