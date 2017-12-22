@@ -53,3 +53,7 @@ The loris image cache is located at /usr/local/share/images/ on the guest.
 You can resize the image by changing the 5th element of the URL's path like this,
 
     http://localhost:9080/loris/001.jp2/full/940,/0/default.png
+
+Additionally the guest also has a host only interface at 192.168.50.49. If you'd like to access loris without using the mapped vagrant ports you canuse the host only interface like this,
+
+    http://192.168.50.49:9080/loris/001.jp2/full/640,/0/default.png
